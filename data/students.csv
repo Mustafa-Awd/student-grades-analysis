@@ -1,16 +1,105 @@
-Name,Math,Physics,Chemistry,English
-Ahmed,88,92,81,75
-Sara,95,89,94,98
-Omar,70,65,72,68
-Lina,84,91,87,90
-Yousef,60,58,65,62
-Mariam,91,94,89,93
-Hassan,76,73,80,78
-Nour,98,97,95,99
-Ali,67,72,70,69
-Fatima,85,88,90,87
-Khaled,79,81,77,75
-Salma,93,90,96,92
-Ziad,72,70,68,74
-Aya,89,85,91,90
-Mostafa,64,60,58,66
+Name,Gender,Age,City,Math,Physics,Chemistry,English
+Ahmed,M,16,Cairo,88,92,81,75
+Sara,F,17,Alexandria,95,89,94,98
+Omar,M,16,Giza,70,65,72,68
+Lina,F,17,Dubai,84,91,87,90
+Yousef,M,16,Amman,60,58,65,62
+Mariam,F,17,Rabat,91,94,89,93
+Hassan,M,16,Casablanca,76,73,80,78
+Nour,F,17,Beirut,98,97,95,99
+Ali,M,16,Baghdad,67,72,70,69
+Fatima,F,17,Tunis,85,88,90,87
+Khaled,M,16,Doha,79,81,77,75
+Salma,F,17,Kuwait City,93,90,96,92
+Ziad,M,16,Muscat,72,70,68,74
+Aya,F,17,Jeddah,89,85,91,90
+Mostafa,M,16,Khartoum,64,60,58,66
+Adam,M,17,London,81,79,85,82
+Emily,F,16,Manchester,92,90,88,94
+James,M,17,Birmingham,75,71,73,76
+Sophia,F,16,Leeds,96,95,97,98
+Daniel,M,17,Liverpool,69,74,71,72
+Olivia,F,16,Bristol,88,86,91,89
+Michael,M,17,New York,90,92,88,91
+Emma,F,16,Chicago,94,96,95,97
+William,M,17,Boston,78,81,80,79
+Ava,F,16,Seattle,87,90,89,88
+Benjamin,M,17,San Francisco,84,86,83,82
+Charlotte,F,16,Los Angeles,97,94,96,95
+Lucas,M,17,Toronto,73,75,72,70
+Mia,F,16,Vancouver,89,91,90,92
+Henry,M,17,Montreal,77,78,79,80
+Noah,M,16,Sydney,93,91,94,92
+Amelia,F,17,Melbourne,90,89,92,91
+Jack,M,16,Perth,71,69,73,72
+Grace,F,17,Auckland,86,88,87,90
+Leo,M,16,Wellington,82,84,81,83
+Chloe,F,17,Paris,95,94,96,97
+Ethan,M,16,Lyon,76,74,78,75
+Camille,F,17,Marseille,88,89,90,91
+Louis,M,16,Nice,80,82,79,81
+Hugo,M,17,Toulouse,91,93,90,92
+Anna,F,16,Berlin,94,95,93,96
+Felix,M,17,Hamburg,74,76,73,75
+Lena,F,16,Munich,87,89,88,90
+Jonas,M,17,Frankfurt,83,81,84,82
+Sofia,F,16,Madrid,96,95,97,94
+Carlos,M,17,Barcelona,78,80,77,79
+Lucia,F,16,Valencia,89,91,88,90
+Mateo,M,17,Seville,72,74,71,73
+Giulia,F,16,Rome,92,90,93,91
+Marco,M,17,Milan,81,83,80,82
+Elena,F,16,Naples,88,87,90,89
+Luca,M,17,Turin,76,79,75,77
+Isabella,F,16,Venice,97,96,98,99
+Ivan,M,17,Moscow,70,72,69,71
+Anastasia,F,16,St Petersburg,91,92,90,93
+Yuki,F,17,Tokyo,95,97,96,98
+Haruto,M,16,Osaka,84,86,83,85
+Mei,F,17,Beijing,93,91,94,95
+Wei,M,16,Shanghai,82,80,84,83
+Jiho,F,17,Seoul,96,95,97,94
+Minho,M,16,Busan,79,81,78,80
+Arjun,M,17,Delhi,88,90,89,87
+Priya,F,16,Mumbai,94,92,95,96
+Rahul,M,17,Bangalore,77,79,76,78
+Ananya,F,16,Chennai,91,90,92,93
+Kabir,M,17,Hyderabad,73,75,74,72
+Aisha,F,16,Lagos,89,91,88,90
+Samuel,M,17,Abuja,81,82,80,83
+Zanele,F,16,Cape Town,95,94,96,97
+Thabo,M,17,Johannesburg,74,76,73,75
+Kwame,M,16,Accra,86,85,87,88
+Ama,F,17,Kumasi,92,93,91,94
+Pedro,M,16,São Paulo,83,81,84,82
+Maria,F,17,Rio de Janeiro,97,95,98,96
+João,M,16,Brasília,75,77,74,76
+Valentina,F,17,Buenos Aires,90,89,92,91
+Mateo,M,16,Córdoba,78,79,80,77
+Santiago,M,17,Bogotá,84,86,85,83
+Camila,F,16,Medellín,93,94,92,95
+Diego,M,17,Lima,72,73,71,74
+Rosa,F,16,Quito,88,90,89,91
+Miguel,M,17,Santiago,80,82,81,79
+Elena,F,16,Mexico City,96,95,97,98
+Jose,M,17,Guadalajara,77,75,78,76
+Natalia,F,16,Monterrey,91,92,90,93
+Mustafa,M,17,Istanbul,89,87,91,90
+Zeynep,F,16,Ankara,94,96,93,95
+Kemal,M,17,Izmir,76,78,75,77
+Huda,F,16,Jerusalem,92,91,94,93
+Ibrahim,M,17,Nablus,81,83,80,82
+Layla,F,16,Gaza,87,89,88,90
+Tariq,M,17,Tripoli,73,74,72,75
+Reem,F,16,Benghazi,95,93,96,94
+Bilal,M,17,Damascus,84,85,83,86
+Rania,F,16,Aleppo,90,92,91,89
+Farah,F,17,Sanaa,88,86,89,87
+Adel,M,16,Aden,79,80,78,81
+Yara,F,17,Manama,97,98,96,99
+Hamza,M,16,Sharjah,74,76,75,73
+Dina,F,17,Abu Dhabi,93,92,94,95
+Karim,M,16,Fes,82,84,81,83
+Imane,F,17,Marrakesh,91,90,92,93
+Nabil,M,16,Oran,77,79,76,78
+Yasmine,F,17,Algiers,95,94,96,97
