@@ -16,8 +16,6 @@ def load_data():
     print("[green]======================== Bottom 5 ========================[/green]\n")
     print(data.tail())
 
-    return data
-
 
 def inspect_data():
     console.rule("Mission 2")
@@ -26,4 +24,16 @@ def inspect_data():
 
     print(f"\n[bold cyan]There are {student_count} students/rows and {column_count} columns.[/bold cyan] [red]No null values[/red]\n")
     print(f"[green]column names[/green]: {list(data.columns)}")
-    print(f"[green]column types[/green]: {data.dtypes.astype(str).to_list()}")
+    print(f"[green]column types[/green]: {data.dtypes.astype(str).to_list()}\n")
+
+
+def basic_statistics():
+    console.rule("Mission 3")
+
+    # filter subjects to include only numerical columns excluding age
+    subjects = data.select_dtypes(include="number").columns.to_list()[1:]
+    # Loop through subjects and print average max and min
+    for subject in subjects:
+        print(f"[bold green]{subject}[bold green]")
+        print(f'[blue] Average mark: {data[subject].mean():.2f}, Highest mark: {data[subject].max()}, Lowest mark: {data[subject].min()}[blue]')
+    return
