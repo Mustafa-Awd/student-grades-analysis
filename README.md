@@ -50,7 +50,10 @@ Student with the highest Math mark
 Student with the lowest English mark
 Students scoring above 90 in Chemistry
 Students failing Math (< 70)
-Mission 5 — Add New Columns
+
+## Mission 5 — Add New Columns
+
+### Tasks:
 
 Create two new columns:
 
