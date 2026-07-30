@@ -2,6 +2,7 @@ from pathlib import Path
 import pandas as pd
 from rich import print
 from rich.console import Console
+from rich.table import Table
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATA_PATH = BASE_DIR / "data" / "students.csv"
@@ -15,6 +16,8 @@ def load_data():
     print(data.iloc[0:5, :], "\n")
     print("[green]======================== Bottom 5 ========================[/green]\n")
     print(data.tail())
+
+    return data
 
 
 def inspect_data():
@@ -37,3 +40,35 @@ def basic_statistics():
         print(f"[bold green]{subject}[bold green]")
         print(f'[blue] Average mark: {data[subject].mean():.2f}, Highest mark: {data[subject].max()}, Lowest mark: {data[subject].min()}[blue]')
     return
+
+def simple_table_creator(data:pd.DataFrame, subject, table_title):
+    table = Table(title=table_title)
+
+    table.add_column("Name")
+    table.add_column("City")
+    table.add_column(subject, justify="right")
+
+    for _, student in data.iterrows():
+        table.add_row(
+            student["Name"],
+            student["City"],
+            str(student[subject])
+        )
+
+    return table
+
+def student_queries():
+    console.rule("Mission 4")
+
+    top_math_student = data.loc[data["Math"].idxmax()]
+    bottom_english_student = data.loc[data["English"].idxmin()]
+    top_chemistry_students = data.loc[data["Chemistry"] > 90]
+    bottom_math_students = data.loc[data["Math"] < 70]
+
+    chemistry_table = simple_table_creator(top_chemistry_students, "Chemistry", "Top chemistry students")
+    math_table = simple_table_creator(bottom_math_students, "Chemistry", "Bottom chemistry students")
+
+    print(f'Top math student: {top_math_student["Name"]}')
+    print(f'Bottom english student: {bottom_english_student["Name"]}\n')
+    console.print(chemistry_table)
+    console.print(math_table)
