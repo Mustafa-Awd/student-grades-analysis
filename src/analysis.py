@@ -72,3 +72,26 @@ def student_queries():
     print(f'Bottom english student: {bottom_english_student["Name"]}\n')
     console.print(chemistry_table)
     console.print(math_table)
+
+# Create two new columns:
+
+# Grading system
+def grade_student(grade):
+    if grade >= 90:
+        return "A"
+    elif grade >= 80:
+        return "B"
+    elif grade >= 70:
+        return "C"
+    elif grade >= 60:
+        return "D"
+    else:
+        return "F"
+
+# Average and Grade for each student  
+def create_new_columns():
+    data["Average"] = data[["Math", "English", "Chemistry", "Physics"]].mean(axis=1)
+    data["Grade"] = data["Average"].apply(grade_student)
+
+    print(data["Average"].head())
+    print(data["Grade"].head())
