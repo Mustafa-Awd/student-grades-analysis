@@ -22,4 +22,31 @@ def create_visualizations ():
 
     plt.figure(figsize=(8,5))
 
+    # Histogram for average marks done by ChatGPT
+    plt.hist(data["Average"], bins=10, color="blue", edgecolor="black", alpha=0.7)
+    plt.title("Distribution of Student Averages")
+    plt.xlabel("Average Mark")
+    plt.ylabel("Number of Students")
+    plt.xlim(0, 100)
+    plt.xticks(range(0, 101, 10))
+    plt.grid(axis="y")
+    plt.tight_layout()
+    plt.show()
+
+    plt.figure(figsize=(6,6))
+
+    # Pie chart for grade distribution done by ChatGPT
+    plt.pie(
+        grade_counts,
+        labels=grade_counts.index,
+        autopct="%1.1f%%",
+        startangle=90
+    )
+
+    plt.title("Grade Distribution")
+    plt.axis("equal")
+    plt.tight_layout()
+
+    plt.show()
+
 create_visualizations()
