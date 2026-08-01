@@ -10,6 +10,8 @@ DATA_PATH = BASE_DIR / "data" / "students.csv"
 data = pd.read_csv(DATA_PATH)
 console = Console()
 
+SUBJECTS = ["Math", "Physics", "Chemistry", "English"]
+
 def load_data():
     console.rule("Mission 1")
     print("[green]======================== Top 5 ========================[/green]\n")
